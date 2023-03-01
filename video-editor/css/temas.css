@@ -1,0 +1,61 @@
+/* Tema claro */
+.light-theme {
+    background-color: #ffffff;
+    color: #262626;
+  }
+  
+  .light-theme nav {
+    background-color: #363636;
+    color: #a7a6a6;
+  }
+  
+  .light-theme a {
+    color: #262626;
+  }
+  
+  .light-theme .theme-button {
+    background-color: #262626;
+    color: #ffffff;
+  }
+  
+  /* Tema escuro */
+  .dark-theme {
+    background-color: #262626;
+    color: #eeeeee;
+  }
+  
+  .dark-theme nav {
+    background-color: #363636;
+    color: #a7a6a6;
+  }
+  
+  .dark-theme a {
+    color: #eeeeee;
+  }
+  
+  .dark-theme .theme-button {
+    background-color: #a7a6a6;
+    color: #363636;
+  }
+
+  .dark-theme .upload-container{
+    background-color: #3d3d3d;
+    color: #b2e3fa;
+    border: 2px dashed #b2e3fa;
+    border-radius: 5px;
+  }
+  
+  .dark-theme body{
+    background-color: #262626;
+    color: #a7a6a6;
+  }
+
+  .dark-theme .upload-container label {
+    background-color: #b2e3fa;
+    border-radius: 5px;
+    color: #262626;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }

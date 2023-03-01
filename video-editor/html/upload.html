@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html id="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+    <link rel="stylesheet" href="/video-editor/css/navbar.css"/>
+    <link rel="stylesheet" href="/video-editor/css/quadro_upload.css" />
+    <link rel="stylesheet" href="/video-editor/css/temas.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">File Upload</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="theme-switch">
+          <button id="theme-toggle"><img src="/video-editor/assets/images/dark_theme_regular_icon_204499.svg" alt="Toggle Theme"></button>
+        </i>
+      </ul>
+    </nav>
+
+    <div class="upload-container">
+      <h1>Arraste e solte o upload do arquivo</h1>
+      <div class="upload-area" id="uploadArea">
+        <p>or</p>
+        <p>
+          <input type="file" id="fileInput" multiple />
+          <label for="fileInput">Selecione o Arquivo(s)</label>
+        </p>
+      </div>
+      <div class="file-list" id="fileList"></div>
+    </div>
+
+    <script src="/video-editor/javascript/evento_arrasta.js"></script>
+    <script src="/video-editor/javascript/mudar_tema.js"></script>
+  </body>
+</html>
