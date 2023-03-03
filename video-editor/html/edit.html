@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizar Arquivo</title>
+  <style>
+    /* estilo para o vídeo */
+    #video-player {
+      width: 90%;
+      height: 90%;
+    }
+  </style>
+</head>
+<body>
+  <video id="video-player" controls></video>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+  // obtém o vídeo do localStorage
+  const videoData = localStorage.getItem('video');
+
+  // verifica se o vídeo existe no localStorage
+  if (!videoData) {
+    showAlert('Não há nenhum vídeo para editar.');
+    return;
+  }
+
+  // converte o vídeo de volta para o objeto File
+  const file = JSON.parse(videoData);
+
+  // cria uma URL do objeto File para exibir o vídeo na tag <video>
+  const videoUrl = URL.createObjectURL(file);
+
+  // obtém a tag <video> e define a URL do vídeo
+  const video = document.querySelector('#video');
+  video.src = videoUrl;
+});
+
+  </script>
+
+  <script src="/video-editor/javascript/edit.js"></script>
+</body>
+</html>

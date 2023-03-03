@@ -1,7 +1,7 @@
 /* Definições globais */
 body {
-  background-color: #ffffff;
-  color: #262626;
+  background-color: #262626;
+  color: #a7a6a6;
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -40,16 +40,34 @@ nav {
   text-decoration: none;
 }
 
+.nav-links .login-user{
+  color: #262626;
+  background: #b2e3fa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
 .nav-links a:hover {
   color: #eeeeee;
 }
 
+.logo a {
+  color: #eeeeee;
+}
+
+.logo img{
+
+  width:50px;
+  height: auto;
+}
 
 .theme-button {
   background-color: #a7a6a6;
+  color: #363636;
   border: none;
   border-radius: 5px;
-  color: #363636;
   cursor: pointer;
   padding: 5px 10px;
 }
@@ -95,10 +113,10 @@ nav button:hover {
 
 /* Definições do quadro de upload */
 .upload-container {
-  background-color: #ffffff;
-  border: 2px dashed #262626;
+  background-color: #3d3d3d;
+  color: #b2e3fa;
+  border: 2px dashed #b2e3fa;
   border-radius: 5px;
-  color: #262626;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,6 +126,7 @@ nav button:hover {
   margin: auto;
   margin-top: 100px;
   text-align: center;
+
 }
 
 .upload-container p {
@@ -116,15 +135,30 @@ nav button:hover {
 }
 
 .upload-container label {
-  background-color: #363636;
+  background-color: #b2e3fa;
   border-radius: 5px;
-  color: #eeeeee;
+  color: #262626;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
   margin-top: 20px;
 }
 
 .upload-container input[type="file"] {
   display: none;
+}
+
+.upload-button-style {
+  background-color: #00ccc2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.upload-button-style:hover {
+  background-color: #cc6b00;
 }

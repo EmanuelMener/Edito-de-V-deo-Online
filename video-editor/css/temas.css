@@ -1,4 +1,10 @@
 /* Tema claro */
+
+.light-theme body{
+  background-color: #ffffff;
+  color: #262626;
+}
+
 .light-theme {
     background-color: #ffffff;
     color: #262626;
@@ -10,14 +16,31 @@
   }
   
   .light-theme a {
-    color: #262626;
+    color: #eeeeee;
   }
   
   .light-theme .theme-button {
     background-color: #262626;
     color: #ffffff;
   }
+
+  .light-theme .upload-container{
+    background-color: #eff1f1;
+    color: #262626;
+    border: 2px dashed #363636;
+    border-radius: 5px;
+  }
   
+  .light-theme .upload-container label {
+    background-color: #262626;
+    border-radius: 5px;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
   /* Tema escuro */
   .dark-theme {
     background-color: #262626;

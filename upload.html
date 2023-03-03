@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>File Upload</title>
+    <title>Edition Ulimited</title>
     <link rel="stylesheet" href="/video-editor/css/navbar.css"/>
     <link rel="stylesheet" href="/video-editor/css/quadro_upload.css" />
     <link rel="stylesheet" href="/video-editor/css/temas.css" />
+    <link rel="icon" type="image/png" href="/video-editor/assets/images/icon.ico" sizes="16x16">
   </head>
   <body>
     <nav>
       <div class="logo">
-        <a href="#">File Upload</a>
+        <a href="#"><img src="/video-editor/assets/images/Logotipo-EU.png" ></img> </a>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="login-user">Entrar</a></li>
+        <li><a href="#">Criar Conta</a></li>
         <li class="theme-switch">
           <button id="theme-toggle"><img src="/video-editor/assets/images/dark_theme_regular_icon_204499.svg" alt="Toggle Theme"></button>
         </i>
@@ -26,13 +26,14 @@
     <div class="upload-container">
       <h1>Arraste e solte o upload do arquivo</h1>
       <div class="upload-area" id="uploadArea">
-        <p>or</p>
+        <p>ou</p>
         <p>
           <input type="file" id="fileInput" multiple />
           <label for="fileInput">Selecione o Arquivo(s)</label>
         </p>
       </div>
       <div class="file-list" id="fileList"></div>
+
     </div>
 
     <script src="/video-editor/javascript/evento_arrasta.js"></script>
